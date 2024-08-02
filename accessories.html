@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Therapy Clinic</title>
+    <link rel="shortcut icon"
+        href="img/logo_navbar.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7d437f3a6f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(img/26807.jpg); background-position: center; background-size: contain;">
+ <!-- navbar start -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="navbar-brand" href="index.html"><div><img src="img/logo_navbar.png" alt=""  class="logo"></div></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><b>Home</b> <span class="sr-only">(current)</span></a>
+      </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="nav-link" href="about_us.html"><b> About Us</b></a>
+      </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <b> Services</b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="chiropractic.html">Chiropractic</a>
+          <a class="dropdown-item" href="osteopathy.html">Osteopathy</a>
+          <a class="dropdown-item" href="physical-therapy.html">Physical Therapy</a>
+          <a class="dropdown-item" href="work.html">Work Injuries & Car</a>
+          <a class="dropdown-item" href="acupuncture.html">Acupuncture</a>
+          <a class="dropdown-item" href="massage-therapy.html">Massage</a>
+        </div>
+      </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <b> Products</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="helping-machine.html">Helping Machines</a>
+            <a class="dropdown-item" href="accessories.html">Accessories</a>
+            <a class="dropdown-item" href="lotion.html">Lotions</a>
+            <a class="dropdown-item" href="essential-oils.html">Essential Oils</a>
+          </div>
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <b> News </b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="health-blog.html">Health Blog</a>
+            
+          </div>
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <li class="nav-item">
+          <a class="nav-link" href="index.html #booking"><b>Booking</b></a>
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" href="contact_us.html"><b> Contact Us </b></a>
+        </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+    </ul>
+  </div>
+</nav>
+<!-- navbar end -->
+
+
+  <button onclick="topFunction()" id="gototop" title="Go to top"><h3><b>↑</b></h3></button>
+    <script src="back-to-top-btn.js"></script><br><br>
+
+    <div class="product-bg col-15" style="margin-top: 10px;">
+        <img src="img/ourproducts-bg.png" alt="" class="col-sm-12 col-lg-12 col-md-12 ">
+      </div>
+      <br><br>
+    
+    <div class="container pb-5 ng-scope">
+        <div class="container">
+         <div class="row pt-4 pb-3">
+          <div class="col-lg-8 col-md-8 col-sm-12"></div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <b class="text-primary">Search Products:</b> <input type="search" placeholder="Search" ng-model="searchName" class="ng-pristine ng-untouched ng-valid ng-empty">
+           </div>
+         </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 pt-3 pb-3 d-flex justify-content-center ng-scope" ng-repeat="accessorie in accessories | filter: {name2: searchName}">
+              <div class="product-card ">
+                <a ng-href="#!/accessories/Dumbbell" href="#!/accessories/Dumbbell">
+                  <div class="logo-cart">
+                   
+                    <i class="fa-solid fa-circle-info"></i>
+                  </div>
+                  <div class="main-images">
+                    <img class="default-image" src="img/Dumbbell.jpg" alt="Dumbbell">
+      
+                    <img class="hover-image" src="img/Dumbbell-hover.jpg" alt="Dumbbell">
+                  </div>
+                  <div class="products-details text-center">
+                    <span class="product-name ng-binding">Workout Dumbbell</span>
+      
+                    <div class="stars text-center" style="font-size:15px">
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-regular fa-star products-icon"></i>
+                    </div>
+                  </div>
+                  <div class="products-price">
+                    <div class="price">
+                      <span class="price_num ng-binding">$25.34</span>
+                      <span class="price_old"><strike class="ng-binding">$32.99</strike></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="button">
+                  <div class="button-layer"></div>
+                  <button data-name="Workout Dumbbell" ng-click="addToCart(accessorie)" onclick="addProduct()">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 pt-3 pb-3 d-flex justify-content-center ng-scope" ng-repeat="accessorie in accessories | filter: {name2: searchName}">
+              <div class="product-card ">
+                <a ng-href="#!/accessories/SingleExerciseBand" href="#!/accessories/SingleExerciseBand">
+                  <div class="logo-cart">
+                    
+                    <i class="fa-solid fa-circle-info"></i>
+                  </div>
+                  <div class="main-images">
+                    <img class="default-image" src="img/SingleExerciseBand.jpg" alt="SingleExerciseBand">
+      
+                    <img class="hover-image" src="img/SingleExerciseBand-hover.jpg" alt="SingleExerciseBand">
+                  </div>
+                  <div class="products-details text-center">
+                    <span class="product-name ng-binding">Single Exercise Band</span>
+      
+                    <div class="stars text-center" style="font-size:15px">
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-regular fa-star products-icon"></i>
+                    </div>
+                  </div>
+                  <div class="products-price">
+                    <div class="price">
+                      <span class="price_num ng-binding">$14.99</span>
+                      <span class="price_old"><strike class="ng-binding">$22</strike></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="button">
+                  <div class="button-layer"></div>
+                  <button data-name="Single Exercise Band" ng-click="addToCart(accessorie)" onclick="addProduct()">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 pt-3 pb-3 d-flex justify-content-center ng-scope" ng-repeat="accessorie in accessories | filter: {name2: searchName}">
+              <div class="product-card ">
+                <a ng-href="#!/accessories/MedicalLegBrace" href="#!/accessories/MedicalLegBrace">
+                  <div class="logo-cart">
+            
+                    <i class="fa-solid fa-circle-info"></i>
+                  </div>
+                  <div class="main-images">
+                    <img class="default-image" src="img/MedicalLegBrace.jpg" alt="MedicalLegBrace">
+      
+                    <img class="hover-image" src="img/MedicalLegBrace-hover.jpg" alt="MedicalLegBrace">
+                  </div>
+                  <div class="products-details text-center">
+                    <span class="product-name ng-binding">Medical Leg Brace</span>
+      
+                    <div class="stars text-center" style="font-size:15px">
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-regular fa-star products-icon"></i>
+                    </div>
+                  </div>
+                  <div class="products-price">
+                    <div class="price">
+                      <span class="price_num ng-binding">$212.99</span>
+                      <span class="price_old"><strike class="ng-binding">$249.99</strike></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="button">
+                  <div class="button-layer"></div>
+                  <button data-name="Medical Leg Brace" ng-click="addToCart(accessorie)" onclick="addProduct()">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 pt-3 pb-3 d-flex justify-content-center ng-scope" ng-repeat="accessorie in accessories | filter: {name2: searchName}">
+              <div class="product-card ">
+                <a ng-href="#!/accessories/Wheelchair" href="#!/accessories/Wheelchair">
+                  <div class="logo-cart">
+                    
+                    <i class="fa-solid fa-circle-info"></i>
+                  </div>
+                  <div class="main-images">
+                    <img class="default-image" src="img/Wheelchair.jpg" alt="Wheelchair">
+      
+                    <img class="hover-image" src="img/Wheelchair-hover.jpg" alt="Wheelchair">
+                  </div>
+                  <div class="products-details text-center">
+                    <span class="product-name ng-binding">Wheel Chair</span>
+      
+                    <div class="stars text-center" style="font-size:15px">
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-regular fa-star products-icon"></i>
+                    </div>
+                  </div>
+                  <div class="products-price">
+                    <div class="price">
+                      <span class="price_num ng-binding">$129.99</span>
+                      <span class="price_old"><strike class="ng-binding">$159.99</strike></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="button">
+                  <div class="button-layer"></div>
+                  <button data-name="Wheel Chair" ng-click="addToCart(accessorie)" onclick="addProduct()">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 pt-3 pb-3 d-flex justify-content-center ng-scope" ng-repeat="accessorie in accessories | filter: {name2: searchName}">
+              <div class="product-card ">
+                <a ng-href="#!/accessories/ButtoFoldingWalker" href="#!/accessories/ButtoFoldingWalker">
+                  <div class="logo-cart">
+                    
+                    <i class="fa-solid fa-circle-info"></i>
+                  </div>
+                  <div class="main-images">
+                    <img class="default-image" src="img/ButtoFoldingWalker-01.jpg" alt="ButtoFoldingWalker">
+      
+                    <img class="hover-image" src="img/ButtoFoldingWalker-hover.jpg" alt="ButtoFoldingWalker">
+                  </div>
+                  <div class="products-details text-center">
+                    <span class="product-name ng-binding">Butto Folding Walker</span>
+      
+                    <div class="stars text-center" style="font-size:15px">
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-regular fa-star products-icon"></i>
+                    </div>
+                  </div>
+                  <div class="products-price">
+                    <div class="price">
+                      <span class="price_num ng-binding">$39.99</span>
+                      <span class="price_old"><strike class="ng-binding">$59.99</strike></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="button">
+                  <div class="button-layer"></div>
+                  <button data-name="Butto Folding Walker" ng-click="addToCart(accessorie)" onclick="addProduct()">Add to cart</button>
+                </div>
+              </div>
+            </div><div class="col-lg-4 col-md-4 col-sm-4 pt-3 pb-3 d-flex justify-content-center ng-scope" ng-repeat="accessorie in accessories | filter: {name2: searchName}">
+              <div class="product-card ">
+                <a ng-href="#!/accessories/DriveMedicalCrutches" href="#!/accessories/DriveMedicalCrutches">
+                  <div class="logo-cart">
+                    
+                    <i class="fa-solid fa-circle-info"></i>
+                  </div>
+                  <div class="main-images">
+                    <img class="default-image" src="img/DriveMedicalCrutches.jpg" alt="DriveMedicalCrutches">
+      
+                    <img class="hover-image" src="img/DriveMedicalCrutches-04.jpg" alt="DriveMedicalCrutches">
+                  </div>
+                  <div class="products-details text-center">
+                    <span class="product-name ng-binding">Drive Crutches</span>
+      
+                    <div class="stars text-center" style="font-size:15px">
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-solid fa-star products-icon"></i>
+                      <i class="fa-regular fa-star products-icon"></i>
+                    </div>
+                  </div>
+                  <div class="products-price">
+                    <div class="price">
+                      <span class="price_num ng-binding">$89.99</span>
+                      <span class="price_old"><strike class="ng-binding">$129.99</strike></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="button">
+                  <div class="button-layer"></div>
+                  <button data-name="Drive Crutches" ng-click="addToCart(accessorie)" onclick="addProduct()">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr  class="seperator col-sm-10 col-md-8 col-lg-8 col-xl-12">
+      <!-- ------------------------------------footer-------------------------------------- -->
+<div class="container-fluid bg-white footer pb-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; background-image: url(img/26807.jpg);background-position: center;background-size: cover;">
+  <div class="container-xxl">
+      <div class="row g-5">
+          <div class="col-lg-4 col-md-5">
+              <h4 class="text-dark mb-4">Contact</h4>
+              <b>Please feel free to contact us</b>
+              <p class="mb-2"><i class="fa fa-map-marker-alt me-3" aria-hidden="true"></i>&nbsp;&nbsp; 294
+                  Nam Ky Khoi Nghia Street, Ward 8,
+                  District 3, Ho Chi Minh City</p>
+                  
+              <p class="mb-2"><i class="fa fa-phone-alt me-3" aria-hidden="true"></i>&nbsp;&nbsp; 1900.123.123</p>
+              <p class="mb-2"><i class="fa fa-envelope me-3" aria-hidden="true"></i>&nbsp;&nbsp;zaratherapyclinic@gmail.com</p>
+              
+
+          </div>
+          <div class="col-lg-2 col-md-5">
+              <h4 class="text-dark mb-4">Products</h4>
+              <a href="helping-machine.html" class="" style="text-decoration: none;">> Helping
+                  Machines</a><br><br>
+              <a href="accessories.html" class="" style="text-decoration: none;">> Accessories</a><br><br>
+              <a href="lotion.html" class="" style="text-decoration: none;">> Lotions</a><br><br>
+              <a href="essential-oils.html" class="" style="text-decoration: none;">> Essential 
+                  oils</a><br>
+
+          </div>
+          <div class="col-lg-3 col-md-5">
+              <h4 class="text-dark mb-4">Zara Therapy Clinic</h4>
+             
+              <p class="mb-1">Providing the best services and products
+                  without using any medicines in Vietnam.</p>
+                  <h6 class="text-dark">©Copyright 2023 - Zara Therapy Clinic</h6>
+              
+
+              
+              <div id="current-time">Date: 9/10/2023 - Time: 12:43 AMundefined</div>
+                 
+                  
+
+              </div>
+
+          <div class="col-lg-3 col-md-7">
+              <h4 class="text-dark mb-4">Address</h4>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.273125983394!2d106.6836567!3d10.790381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d34a704ab7%3A0xe4e75cbec27ea20f!2zMjk0IMSQLiBOYW0gS-G7syBLaOG7n2kgTmdoxKlhLCBQaMaw4budbmcgOCwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1683446992468!5m2!1svi!2s" width="270px" height="160px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+      
+
+  </div>
+</div>
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 250, // offset (in px) from the original trigger point
+            duration: 600, // values from 0 to 3000, with step 50ms
+        });
+    </script>
+    
+</body>
+</html>
